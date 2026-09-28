@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://latitude32fitness.com/sitemap.xml
