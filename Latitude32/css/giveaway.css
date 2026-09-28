@@ -1,0 +1,92 @@
+/* ==========================================================
+   Latitude 32 Fitness — Free 30-Day Giveaway landing page
+   Standalone (no nav/footer). Uses the homepage components
+   (hx, nx, h2-apart, pg4, h2-reviews, lx, cta3) plus the shared
+   landing components in forty.css. Page-specific bits only.
+   ========================================================== */
+
+/* ---------- Hero ---------- */
+.gw-hero{padding-top:clamp(40px,5vw,72px)!important}
+.gw-hero h1{font-size:clamp(46px,5.8vw,96px);line-height:.88;margin-bottom:22px}
+.gw-hero h1 .a,.gw-hero h1 .b,.gw-hero h1 .c{display:block}
+.gw-hero h1 .b{color:var(--blue);animation:slam .8s .28s var(--ease) both}
+.gw-hero h1 .c{font-size:.4em;letter-spacing:.02em;margin:10px 0 8px;animation:fade .8s .4s both}
+.gw-hero .tag{display:block;letter-spacing:.06em;line-height:1.35;font-size:clamp(15px,1.35vw,19px);color:#fff;margin-bottom:16px}
+.gw-hero .tag::before{display:none}
+.gw-hero .sub{max-width:540px;margin-bottom:22px}
+.gw-hero .sub b{color:#fff}
+.gw-hero .ctas .btn small{max-width:300px}
+.gw-hero .hx-frame video{object-position:center 40%}
+.gw-hero .spin .core b{font-size:clamp(22px,2vw,30px)}
+.gw-mini{list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);max-width:560px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.03)}
+.gw-mini li{display:flex;align-items:center;gap:10px;padding:13px 14px;font-family:var(--f-display);font-weight:800;font-style:italic;text-transform:uppercase;font-size:12.5px;letter-spacing:.05em;line-height:1.2}
+.gw-mini li+li{border-left:1px solid rgba(255,255,255,.14)}
+.gw-mini b{flex:0 0 auto;color:var(--blue);font-size:15px}
+.gw-mini li:last-child{background:rgba(56,152,236,.16)}
+
+/* ---------- 01 Register ---------- */
+.gw-reg h2 span{display:block}
+.gw-reg .lead{color:rgba(255,255,255,.8);margin-bottom:26px}
+.gw-list{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:12px}
+.gw-list li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:center;padding:14px 18px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.01))}
+.gw-list .n{width:48px;height:48px;display:grid;place-items:center;background:var(--blue);font-family:var(--f-display);font-weight:900;font-style:italic;font-size:20px;clip-path:polygon(18% 0,100% 0,82% 100%,0 100%)}
+.gw-list b{display:block;font-family:var(--f-display);font-weight:900;font-style:italic;text-transform:uppercase;font-size:clamp(15px,1.3vw,17px);letter-spacing:.02em;line-height:1.2}
+.gw-list p{margin:2px 0 0;font-size:14.5px;color:rgba(255,255,255,.65)}
+.gw-alert{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid rgba(56,152,236,.6);border-left:4px solid var(--blue);background:rgba(56,152,236,.1)}
+.gw-alert svg{flex:0 0 22px;width:22px;height:22px;color:var(--blue);margin-top:2px}
+.gw-alert p{margin:0;font-size:15px;color:rgba(255,255,255,.85)}
+.gw-alert b{color:#fff}
+
+/* ---------- 02 Prize ---------- */
+.gw-prize .nx-copy h2{font-size:clamp(28px,3.2vw,48px)}
+.gw-prize .nx-copy h2 em{display:block;margin-top:6px}
+.gw-prize .nx-cols p{color:rgba(255,255,255,.7)}
+.gw-value{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gw-value li{display:flex;flex-direction:column;gap:2px;padding:14px 16px 14px 44px;position:relative;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03)}
+.gw-value li::before{content:"";position:absolute;left:14px;top:16px;width:20px;height:20px;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat;transform:skewX(var(--skew))}
+.gw-value span{font-family:var(--f-display);font-weight:800;font-style:italic;text-transform:uppercase;font-size:14px;letter-spacing:.03em}
+.gw-value s{font-style:italic;font-size:13px;color:rgba(255,255,255,.5)}
+.gw-rem{max-width:280px;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.6)}
+.gw-prize .nx-f p{margin:6px 0 0;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.66)}
+.gw-prize .nx-f h3{font-size:clamp(15px,1.3vw,18px)}
+.gw-prize .chipx .num i{font-size:.45em}
+
+/* ---------- 03 Why the trial ---------- */
+.h2-apart .top h2 em{display:block;font-size:.6em;margin-top:8px}
+.gw-apart-intro{max-width:820px;margin:-10px 0 clamp(30px,4vw,48px);color:rgba(255,255,255,.75);font-size:clamp(16px,1.3vw,18px)}
+
+/* ---------- 04 Never lifted (pg4 with local video) ---------- */
+.gw-new .copy p b{color:#fff}
+.gw-new .bg video{object-position:center 45%}
+
+/* ---------- 05 Quotes with stars ---------- */
+.gw-page .ff-quotes .stars{color:var(--blue);letter-spacing:.15em;font-size:14px}
+
+/* ---------- Final CTA ---------- */
+.gw-final{padding-bottom:clamp(90px,10vw,140px)}
+.gw-final .sub b{color:#fff}
+.gw-recap{padding:clamp(22px,2.4vw,32px);background:rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.gw-recap{width:100%;max-width:820px;margin:34px auto 0}
+.gw-recap .ff-sum{margin:0 0 16px;grid-template-columns:repeat(3,1fr)}
+.gw-recap .ff-sum div:last-child dd{color:var(--blue)}
+.gw-fine{margin:0;font-size:13px;line-height:1.55;color:rgba(255,255,255,.6)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1020px){
+  .gw-hero h1{font-size:clamp(42px,10vw,80px)}
+  .gw-hero .hx-media{max-width:640px}
+  .gw-hero .hx-spin{left:auto!important;right:-8px}
+}
+@media (max-width:640px){
+  .gw-mini{grid-template-columns:1fr}
+  .gw-mini li+li{border-left:0;border-top:1px solid rgba(255,255,255,.14)}
+  .gw-hero .ctas .btn{width:100%}
+  .gw-value{grid-template-columns:1fr}
+  .gw-recap .ff-sum{grid-template-columns:1fr}
+  .gw-list li{grid-template-columns:40px 1fr;padding:12px 14px}
+  .gw-list .n{width:40px;height:40px;font-size:17px}
+}
+.gw-reg h2{font-size:clamp(30px,3.4vw,52px)}
+
+/* why-the-trial card photos (video stills) */
+.h2-apart .sq img.gw-sq2{object-position:center 72%}
